@@ -110,7 +110,7 @@ int main(int argv, char** argc) {
         nameName = line;
         continue;
       } else if ((line.size() >= 8 && memcmp(line.c_str(), "#include", 8) == 0)) {
-        hOS << line << "\n\n";
+        hOS << line << "\n";
         continue;
       }
     } else {
@@ -122,6 +122,7 @@ int main(int argv, char** argc) {
     }
 
     lineStream << line;
+    lineStream >> read; // Ignore first API definition or starter, not optional
     lineStream >> read;
     rework.clear();
     rework.append("typedef ");
@@ -151,7 +152,7 @@ int main(int argv, char** argc) {
   hOS << "\n\n// **************************************************\n// Declarations\n\n";
 
   for (auto const& [projName, name] : listedFunctions) {
-    hOS << "APIGET " << projName << ' ' << name << " = NULL;\n";
+    hOS << "APIGET " << projName << ' ' << name << ";\n";
   }
 
   hOS << "\nbool LoadFunctions(PROCADDRESSFUNC proc);\n";
