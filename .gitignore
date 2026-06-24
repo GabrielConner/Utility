@@ -1,6 +1,4 @@
-
 *.sln[x]
-*.vcxproj
 *.vcxproj.filters
 
 ## Ignore Visual Studio temporary files, build results, and
