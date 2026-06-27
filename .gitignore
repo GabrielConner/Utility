@@ -1,4 +1,7 @@
-*.sln[x]
+*.ppm_psave
+
+*.sln
+*.slnx
 *.vcxproj.filters
 *.dll
 

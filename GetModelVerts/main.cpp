@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
+#include <iomanip>
+#include <format>
 
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
@@ -14,7 +16,7 @@ enum struct PropertyType { POSITION=0, UV, NORMAL, COLOR };
 
 int main(int argc, char** argv) {
   if (argc < 3 || strcmp(argv[1],"-h") == 0) {
-    std::cout << "GMV {ModelLocation} {Output} [s]\nModelLocation -- The file location of the model\nOutput -- The data from the vertices to copy\n\tp -- Position\n\tu -- UV\n\tn -- Normal\n\n\tc -- Color\n\ns -- Add backslashes along each line (for macro creation)";
+    std::cout << "GMV {ModelLocation} {Output} [s] [f]\nModelLocation -- The file location of the model\nOutput -- The data from the vertices to copy\n\tp -- Position\n\tu -- UV\n\tn -- Normal\n\n\tc -- Color\n\ns -- Add backslashes along each line (for macro creation)\nf -- Add an 'f' to the end of each number";
     return 0;
   }
 
@@ -44,26 +46,36 @@ int main(int argc, char** argv) {
     std::cout << "At least one valid variable is required\n";
     return 1;
   }
+
+  std::string add = "";
+  std::string formatString = "{:}";
+  for (int i = 3; i < argc; i++) {
+    char c = *argv[i];
+    if (c == 's') {
+      add = "\\";
+    } else if (c == 'f') {
+      formatString = "{:f}";
+    }
+  }
   
-  std::string add = (argc > 3 && strcmp(argv[3], "s") == 0) ? "\\" : "";
-  
+
   std::stringstream str;
   for (size_t i = 0; i < optMesh->vertexCount; i++) {
     LoadedMeshVertex const& vert = optMesh->vertices[i];
-    
+
     for (PropertyType const& prop : props) {
       switch (prop) {
         case PropertyType::POSITION:
-           str << vert.position << ",";
-            break;
+          str << std::vformat(formatString, std::make_format_args(vert.position)) << ",";
+          break;
         case PropertyType::UV:
-          str << vert.uv << ",";
+          str << std::vformat(formatString, std::make_format_args(vert.uv)) << ",";
           break;
         case PropertyType::NORMAL:
-          str << vert.normal << ",";
+          str << std::vformat(formatString, std::make_format_args(vert.normal)) << ",";
           break;
         case PropertyType::COLOR:
-          str << vert.color << ",";
+          str << std::vformat(formatString, std::make_format_args(vert.color)) << ",";
           break;
       }
     }

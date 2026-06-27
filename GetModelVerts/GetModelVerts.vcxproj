@@ -72,15 +72,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_CRT_SECURE_NO_WARNINGS;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\documents\PersonalPackages\modelLoading\live\include;C:\Users\gabri\documents\PersonalPackages\vector\live\include;C:\Users\gabri\documents\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\modelLoading\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\vector\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\documents\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies);assimp-vc143-mt.lib;</AdditionalDependencies>
     </Link>
     <Manifest>
@@ -93,15 +93,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_CRT_SECURE_NO_WARNINGS;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\documents\PersonalPackages\modelLoading\live\include;C:\Users\gabri\documents\PersonalPackages\vector\live\include;C:\Users\gabri\documents\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\modelLoading\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\vector\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\documents\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies);assimp-vc143-mt.lib;</AdditionalDependencies>
     </Link>
     <Manifest>
@@ -112,15 +112,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_CRT_SECURE_NO_WARNINGS;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\documents\PersonalPackages\modelLoading\live\include;C:\Users\gabri\documents\PersonalPackages\vector\live\include;C:\Users\gabri\documents\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\modelLoading\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\vector\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\documents\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies);assimp-vc143-mt.lib;</AdditionalDependencies>
     </Link>
     <Manifest>
@@ -133,15 +133,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_CRT_SECURE_NO_WARNINGS;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_PPM_VECTOR;_PPM_VECTOR_LIVE;_PPM_ASSIMP;_PPM_ASSIMP_LIVE;_PPM_MODELLOADING;_PPM_MODELLOADING_LIVE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\documents\PersonalPackages\modelLoading\live\include;C:\Users\gabri\documents\PersonalPackages\vector\live\include;C:\Users\gabri\documents\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\modelLoading\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\vector\live\include;C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\documents\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\assimp\live\library;</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies);assimp-vc143-mt.lib;</AdditionalDependencies>
     </Link>
     <Manifest>
@@ -150,8 +150,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="..\..\..\..\documents\PersonalPackages\modelLoading\live\src\modelLoading.cpp" />
-    <ClCompile Include="C:\Users\gabri\documents\PersonalPackages\vector\live\src\vector.cpp" />
+    <ClCompile Include="C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\modelLoading\live\src\modelLoading.cpp" />
+    <ClCompile Include="C:\Users\gabri\Desktop\Desktop\Coding\PersonalPackages\vector\live\src\vector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

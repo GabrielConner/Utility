@@ -50,15 +50,16 @@ int main(int argv, char** argc) {
   }
 
 #if !(_DEBUG)
-  if (argv != 4) {
+  if (argv != 3) {
     std::cout << "Invalid argument count";
     return 0;
   }
 
 
   std::string input = argc[1];
-  std::string headerOutput = argc[2];
-  std::string sourceOutput = argc[3];
+  std::string outName = argc[2];
+  std::string headerOutput = outName + ".h";
+  std::string sourceOutput = outName + ".cpp";
 
   if (!std::filesystem::exists(input)) {
     std::cout << "Input file does not exist";
